@@ -15,16 +15,7 @@ function CreateArea(props) {
   }
 
   return (
-    <div>
-      <form
-        onSubmit={() => {
-          props.handleSubmit(note, event);
-          setNote(() => ({
-            title: "",
-            content: ""
-          }));
-        }}
-      >
+    <div className="input-area">
         <input
           name="title"
           placeholder="Title"
@@ -38,8 +29,13 @@ function CreateArea(props) {
           onChange={handleChange}
           value={note.content}
         />
-        <button type="submit">Add</button>
-      </form>
+        <button onClick={() => {
+          props.handleSubmit(note);
+          setNote(() => ({
+            title: "",
+            content: ""
+          }));
+        }}>+</button>
     </div>
   );
 }

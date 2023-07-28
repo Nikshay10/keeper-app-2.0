@@ -61,13 +61,13 @@ footer p {
   margin-right: 10px;
   color: #f5ba13;
   border: none;
-  width: 36px;
+  width: 50px;
   height: 36px;
   cursor: pointer;
   outline: none;
 }
 
-form {
+.input-area {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -76,8 +76,8 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+.input-area input,
+.input-area textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -86,7 +86,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+.input-area button {
   position: absolute;
   right: 18px;
   bottom: -18px;
@@ -99,4 +99,5 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+  font-size: xx-large;
 }

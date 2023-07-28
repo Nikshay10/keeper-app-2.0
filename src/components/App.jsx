@@ -9,7 +9,6 @@ function App() {
 
   function addNote(newNote, event) {
     setNotes((prev) => [...prev, newNote]);
-    event.preventDefault();
     console.log(notes);
   }
 
